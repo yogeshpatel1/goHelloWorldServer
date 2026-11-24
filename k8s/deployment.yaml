@@ -12,9 +12,11 @@ spec:
       labels:
         app: go-hello-world
     spec:
+      imagePullSecrets:
+        - name: <+artifacts.primary.imagePullSecret>
       containers:
       - name: go-hello-world
-        image: yogeshpatel1work/go-hello-world:v1
+        image: <+artifacts.primary.image>
         ports:
         - containerPort: 80
 ---
