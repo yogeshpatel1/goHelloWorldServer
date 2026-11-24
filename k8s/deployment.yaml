@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: go-hello-world
-        image: nginx:latest
+        image: yogeshpatel1work/go-hello-world:v1
         ports:
         - containerPort: 80
 ---
