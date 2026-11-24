@@ -15,8 +15,8 @@ spec:
       imagePullSecrets:
         - name: <+artifacts.primary.imagePullSecret>
       containers:
-      - name: go-hello-world
-        image: <+artifacts.primary.image>
+        - name: go-hello-world
+          image: {{.Values.image}}
         ports:
         - containerPort: 80
 ---
