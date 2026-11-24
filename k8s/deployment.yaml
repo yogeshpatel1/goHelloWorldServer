@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: go-hello-world
-        image: <your-registry>/go-hello-world:<tag>
+        image: yogeshpatel1/go-hello-world:<tag>
         ports:
         - containerPort: 8080
 ---
