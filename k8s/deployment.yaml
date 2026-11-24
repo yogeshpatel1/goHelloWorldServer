@@ -13,7 +13,8 @@ spec:
         app: go-hello-world
     spec:
       imagePullSecrets:
-        - name: <+artifacts.primary.imagePullSecret>
+        - name: dockerhub-creds
+
       containers:
         - name: go-hello-world
           image: {{.Values.image}}
