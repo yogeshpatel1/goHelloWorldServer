@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: go-hello-world
-        image: yogeshpatel1/go-hello-world:<tag>
+        image: nginx:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
